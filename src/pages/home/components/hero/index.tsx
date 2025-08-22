@@ -2,10 +2,6 @@ import { useState } from "react";
 import { FreeMode, Navigation, Thumbs, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./styles.css";
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
 import { useMovie } from "../../../movie/services/use-all-movie";
 import { IMAGE_URL } from "../../../../shared/const";
 import type { IMovie } from "../../../movie/move-type";
@@ -23,8 +19,6 @@ const Hero = () => {
           disableOnInteraction: false,
         }}
         style={{
-          "--swiper-navigation-color": "#c61f1f",
-          "--swiper-pagination-color": "#fff",
           width: "80%",
         }}
         loop={true}
