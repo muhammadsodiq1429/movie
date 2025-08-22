@@ -11,7 +11,7 @@ import { IMAGE_URL } from "../../../../shared/const";
 import type { IMovie } from "../../../movie/move-type";
 
 const Hero = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState<any>(undefined);
   const { getAllMovie } = useMovie();
   const { data } = getAllMovie();
   const data2: IMovie[] = data?.results?.splice(0, 5);

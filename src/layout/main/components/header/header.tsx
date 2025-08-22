@@ -1,4 +1,4 @@
-import { memo, useEffect, useState } from "react";
+import { memo, useState } from "react";
 import logoLg from "../../../../shared/assets/logo-lg.svg";
 import { navbarCollections } from "../../../../shared/static/navbar-collections";
 import { Link, NavLink } from "react-router-dom";
@@ -6,10 +6,10 @@ import { FiMoon, FiSun } from "react-icons/fi";
 import { FaBars } from "react-icons/fa";
 
 const Header = () => {
-  const [theme, setTheme] = useState<"dark" | "light">("light");
+  const setTheme = useState<"dark" | "light">("light");
   const handleTheme = () => {
     document.body.classList.toggle("dark");
-    setTheme((p) => (p == "dark" ? "light" : "dark"));
+    setTheme[1]((p) => (p == "dark" ? "light" : "dark"));
   };
 
   return (
