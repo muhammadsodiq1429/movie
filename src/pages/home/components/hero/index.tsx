@@ -9,11 +9,8 @@ import "swiper/css/thumbs";
 import { useMovie } from "../../../movie/services/use-all-movie";
 import { IMAGE_URL } from "../../../../shared/const";
 import type { IMovie } from "../../../movie/move-type";
-import { useOneMovie } from "../../../movie-detail/services/use-one-movie";
 
-export default function App() {
-  const { getOneMovieById } = useOneMovie();
-
+const Hero = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const { getAllMovie } = useMovie();
   const { data } = getAllMovie();
@@ -28,6 +25,7 @@ export default function App() {
         style={{
           "--swiper-navigation-color": "#c61f1f",
           "--swiper-pagination-color": "#fff",
+          width: "80%",
         }}
         loop={true}
         spaceBetween={10}
@@ -87,4 +85,6 @@ export default function App() {
       </Swiper>
     </>
   );
-}
+};
+
+export default Hero;
