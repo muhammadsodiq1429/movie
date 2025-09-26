@@ -33,6 +33,13 @@ body::-webkit-scrollbar {
 @theme {
   --color-pyc: #c61f1f;
   --color-sc: #a1a1a1;
+  --color-gbg: #1d1d1d;
+  --color-lgbg: #e2e2e2;
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+footer > div > div svg {
+  color: #c61f1f;
+  font-size: 24px;
+}

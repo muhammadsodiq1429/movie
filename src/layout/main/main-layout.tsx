@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 
 const MainLayout = () => {
   return (
-    <div className="dark:bg-black dark:text-white">
+    <div className="dark:bg-black dark:text-white pb-10">
       <Header />
       <main className="min-h-screen">
         <Outlet />

@@ -16,6 +16,13 @@
   color: #c61f1f;
 }
 
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -45,7 +52,13 @@
 
 .mySwiper2 {
   height: 80%;
-  width: 100%;
+  width: 80%;
+}
+
+@media (max-width: 640px) {
+  .mySwiper2 {
+    width: 100%;
+  }
 }
 
 .mySwiper {

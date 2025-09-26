@@ -9,7 +9,7 @@ const MovieDetail = () => {
   const { data } = getOneMovieById(id);
   const { data: images } = getMovieByIdAndPath(id, "images");
   const { data: similar } = getMovieByIdAndPath(id, "similar");
-  console.log(similar);
+
   return (
     <div className="MovieDetail container mx-auto">
       <div className="card">
