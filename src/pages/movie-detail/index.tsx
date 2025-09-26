@@ -8,7 +8,7 @@ const MovieDetail = () => {
   const { getOneMovieById, getMovieByIdAndPath } = useOneMovie();
   const { data } = getOneMovieById(id);
   const { data: images } = getMovieByIdAndPath(id, "images");
-  const { data: similar } = getMovieByIdAndPath(id, "similar");
+  // const { data: similar } = getMovieByIdAndPath(id, "similar");
 
   return (
     <div className="MovieDetail container mx-auto">
